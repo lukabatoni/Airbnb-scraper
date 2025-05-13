@@ -1,0 +1,19 @@
+browser: chrome
+headless: false  # Set to false for debugging
+timeout: 15
+output_formats: ["csv", "json"]
+output_dir: "./data"
+
+# Updated search configuration
+search:
+  location: "New York"
+  checkin: ""  # YYYY-MM-DD or empty for flexible dates
+  checkout: "" # YYYY-MM-DD or empty for flexible dates
+  adults: 1
+  price_min: ""
+  price_max: ""
+
+max_pages: 1  # Reduce for testing
+request_delay:
+  min: 2
+  max: 5
